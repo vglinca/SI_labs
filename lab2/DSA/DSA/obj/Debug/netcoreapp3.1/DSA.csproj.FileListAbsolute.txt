@@ -1,0 +1,13 @@
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\bin\Debug\netcoreapp3.1\DSA.exe
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\bin\Debug\netcoreapp3.1\DSA.deps.json
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\bin\Debug\netcoreapp3.1\DSA.runtimeconfig.json
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\bin\Debug\netcoreapp3.1\DSA.runtimeconfig.dev.json
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\bin\Debug\netcoreapp3.1\DSA.dll
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\bin\Debug\netcoreapp3.1\DSA.pdb
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\obj\Debug\netcoreapp3.1\DSA.csprojAssemblyReference.cache
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\obj\Debug\netcoreapp3.1\DSA.AssemblyInfoInputs.cache
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\obj\Debug\netcoreapp3.1\DSA.AssemblyInfo.cs
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\obj\Debug\netcoreapp3.1\DSA.csproj.CoreCompileInputs.cache
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\obj\Debug\netcoreapp3.1\DSA.dll
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\obj\Debug\netcoreapp3.1\DSA.pdb
+D:\Универ\4 курс\1 семестр\SI\LABS\lab2\DSA\DSA\obj\Debug\netcoreapp3.1\DSA.genruntimeconfig.cache

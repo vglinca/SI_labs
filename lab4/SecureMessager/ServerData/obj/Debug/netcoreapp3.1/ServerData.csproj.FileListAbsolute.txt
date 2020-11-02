@@ -1,0 +1,9 @@
+D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\bin\Debug\netcoreapp3.1\ServerData.deps.json
+D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\bin\Debug\netcoreapp3.1\ServerData.dll
+D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\bin\Debug\netcoreapp3.1\ServerData.pdb
+D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.csprojAssemblyReference.cache
+D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.AssemblyInfoInputs.cache
+D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.AssemblyInfo.cs
+D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.csproj.CoreCompileInputs.cache
+D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.dll
+D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.pdb
