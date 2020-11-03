@@ -5,6 +5,7 @@
         Registration,
         Broadcast,
         Chat,
-        ClientId
+        ClientId,
+        GetParticipants
     }
 }

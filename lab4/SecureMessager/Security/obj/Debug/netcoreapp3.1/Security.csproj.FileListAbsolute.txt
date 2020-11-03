@@ -7,3 +7,12 @@ D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\Security
 D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\Security\obj\Debug\netcoreapp3.1\Security.csproj.CoreCompileInputs.cache
 D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\Security\obj\Debug\netcoreapp3.1\Security.dll
 D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\Security\obj\Debug\netcoreapp3.1\Security.pdb
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\Security\bin\Debug\netcoreapp3.1\Security.deps.json
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\Security\bin\Debug\netcoreapp3.1\Security.dll
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\Security\bin\Debug\netcoreapp3.1\Security.pdb
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\Security\obj\Debug\netcoreapp3.1\Security.csprojAssemblyReference.cache
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\Security\obj\Debug\netcoreapp3.1\Security.AssemblyInfoInputs.cache
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\Security\obj\Debug\netcoreapp3.1\Security.AssemblyInfo.cs
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\Security\obj\Debug\netcoreapp3.1\Security.csproj.CoreCompileInputs.cache
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\Security\obj\Debug\netcoreapp3.1\Security.dll
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\Security\obj\Debug\netcoreapp3.1\Security.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p6HgoQQOn3PYg2ZciqrFu+hzo21rV+6hNhKyaWEbUaKosTNstNQyhrGzf4yPsyKYSfM9fRiTnGbwaWyXzTr3BQ==",
+  "dgSpecHash": "ieQIPwebUy1+FFuioRzr/5KdqU+WfakttFsR/4Vx51YzOuYhGPVvnorfOPPs2lz21+Ri77CkBPQFBolXA2zoLA==",
   "success": true,
-  "projectFilePath": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Server\\Server.csproj",
+  "projectFilePath": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Server\\Server.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

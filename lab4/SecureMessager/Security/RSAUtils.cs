@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Security
 {
@@ -6,6 +7,9 @@ namespace Security
     {
         private const int HighBoundary = 30000;
         private const int LowBoundary = 60000;
+
+        public Pair SecretKey { get; private set; }
+        public Pair PublicKey { get; private set; }
 
         public Pair[] KeyGen()
         {
@@ -18,10 +22,13 @@ namespace Security
             var d = CalculateD(eulerFunc);
             var e = CalculateE(d, eulerFunc);
             
-            var secretKEy = new Pair(d, n);
+            var secretKey = new Pair(d, n);
             var publicKey = new Pair(e, n);
 
-            return new[] {secretKEy, publicKey};
+            SecretKey = secretKey;
+            PublicKey = publicKey;
+
+            return new[] {secretKey, publicKey};
         }
 
 
@@ -77,7 +84,7 @@ namespace Security
         
         private long GetEulerFunction(long p, long q) => (p - 1) * (q - 1);
         
-        static long GCD(long e, long d)
+        private long GCD(long e, long d)
         {
             while (e != 0 && d != 0)
             {
@@ -110,6 +117,18 @@ namespace Security
             }
 
             return true;
+        }
+
+        public List<int> Encrypt(string text)
+        {
+            var msgArr = text.ToCharArray();
+
+            /* for(int i = 0; i < msgArr.Length; ++i)
+             {
+                 var encryptedSymbol = Cryption(msgArr[i], )
+             }*/
+
+            return null;
         }
         
         static long Cryption(int a, long b, long c)

@@ -87,6 +87,10 @@ namespace Server
                     break;
                 case PacketType.ClientId:
                     break;
+                case PacketType.GetParticipants:
+                    cl = _clients.FirstOrDefault(c => c.Id == p.ReceiverId);
+                    cl?.ClientSocket.Send(p.ToBytes());
+                    break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }

@@ -7,3 +7,12 @@ D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerDa
 D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.csproj.CoreCompileInputs.cache
 D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.dll
 D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.pdb
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\bin\Debug\netcoreapp3.1\ServerData.deps.json
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\bin\Debug\netcoreapp3.1\ServerData.dll
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\bin\Debug\netcoreapp3.1\ServerData.pdb
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.csprojAssemblyReference.cache
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.AssemblyInfoInputs.cache
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.AssemblyInfo.cs
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.csproj.CoreCompileInputs.cache
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.dll
+C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.pdb

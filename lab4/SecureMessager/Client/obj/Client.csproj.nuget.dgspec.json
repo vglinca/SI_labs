@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Client\\Client.csproj": {}
+    "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Client\\Client.csproj": {}
   },
   "projects": {
-    "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Client\\Client.csproj": {
+    "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Client\\Client.csproj",
-        "packagesPath": "C:\\Users\\Azathoth\\.nuget\\packages\\",
-        "outputPath": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Client\\obj\\",
+        "projectPath": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Client\\Client.csproj",
+        "packagesPath": "C:\\Users\\vitalie.glinca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Client\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Azathoth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vitalie.glinca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,11 +30,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Security\\Security.csproj": {
-                "projectPath": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Security\\Security.csproj"
+              "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Security\\Security.csproj": {
+                "projectPath": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Security\\Security.csproj"
               },
-              "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\ServerData\\ServerData.csproj": {
-                "projectPath": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\ServerData\\ServerData.csproj"
+              "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\ServerData\\ServerData.csproj": {
+                "projectPath": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\ServerData\\ServerData.csproj"
               }
             }
           }
@@ -59,21 +62,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Security\\Security.csproj": {
+    "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Security\\Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Security\\Security.csproj",
+        "projectUniqueName": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Security\\Security.csproj",
         "projectName": "Security",
-        "projectPath": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Security\\Security.csproj",
-        "packagesPath": "C:\\Users\\Azathoth\\.nuget\\packages\\",
-        "outputPath": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Security\\obj\\",
+        "projectPath": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Security\\Security.csproj",
+        "packagesPath": "C:\\Users\\vitalie.glinca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Security\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Azathoth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vitalie.glinca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -111,21 +117,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\ServerData\\ServerData.csproj": {
+    "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\ServerData\\ServerData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\ServerData\\ServerData.csproj",
+        "projectUniqueName": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\ServerData\\ServerData.csproj",
         "projectName": "ServerData",
-        "projectPath": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\ServerData\\ServerData.csproj",
-        "packagesPath": "C:\\Users\\Azathoth\\.nuget\\packages\\",
-        "outputPath": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\ServerData\\obj\\",
+        "projectPath": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\ServerData\\ServerData.csproj",
+        "packagesPath": "C:\\Users\\vitalie.glinca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\ServerData\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Azathoth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vitalie.glinca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -163,7 +172,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

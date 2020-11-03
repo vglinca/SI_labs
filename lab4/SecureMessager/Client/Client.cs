@@ -11,10 +11,14 @@ namespace Client
 {
     internal static class Client
     {
-        public static Socket MasterSocket;
         public static string Name;
         public static Guid Id;
+        public static Socket MasterSocket;
         public static Dictionary<string, Guid> Recepients = new Dictionary<string, Guid>();
+        public static RSAUtils RsaCrypto;
+        public static Pair[] Keys;
+        public static List<int> Chipher = new List<int>();
+        public static List<int> Decrypted = new List<int>();
 
         private static void Main(string[] args)
         {
@@ -33,8 +37,8 @@ namespace Client
                 MasterSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                 var ipEndpoint = new IPEndPoint(IPAddress.Parse(ip), 4242);
                 
-                var rsa = new RSAUtils();
-                var keys = rsa.KeyGen();
+                RsaCrypto = new RSAUtils();
+                Keys = RsaCrypto.KeyGen();
 
                 try
                 {
@@ -56,6 +60,8 @@ namespace Client
             {
                 Console.Write($"{DateTime.Now}::>");
                 var input = Console.ReadLine()?.Trim();
+
+                
                 
                 Console.Write("Send this message to: ");
                 var recipient = Console.ReadLine()?.Trim();
@@ -111,6 +117,8 @@ namespace Client
                     Console.WriteLine($"{p.SenderId} with name {p.Name} has connected.");
                     Console.ForegroundColor = c;
                     Recepients.Add(p.Name, p.SenderId);
+                    var packet = new Packet(PacketType.GetParticipants, Id, p.SenderId, Name);
+                    MasterSocket.Send(packet.ToBytes());
                     break;
                 case PacketType.ClientId:
                     var idAsString = p.ReceiverId.ToString();
@@ -119,8 +127,11 @@ namespace Client
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine($"Your id is {Id}");
                     Console.ForegroundColor = c;
-                    var packet = new Packet(PacketType.Broadcast, Id, null, Name);
+                    packet = new Packet(PacketType.Broadcast, Id, null, Name);
                     MasterSocket.Send(packet.ToBytes());
+                    break;
+                case PacketType.GetParticipants:
+                    Recepients.TryAdd(p.Name, p.SenderId);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
