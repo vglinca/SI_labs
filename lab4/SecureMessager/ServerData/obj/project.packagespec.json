@@ -15,7 +15,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Security\\Security.csproj": {
+            "projectPath": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Security\\Security.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

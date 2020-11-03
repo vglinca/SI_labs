@@ -11,14 +11,13 @@ namespace Client
 {
     internal static class Client
     {
+        public const int Port = 4242;
         public static string Name;
         public static Guid Id;
         public static Socket MasterSocket;
-        public static Dictionary<string, Guid> Recepients = new Dictionary<string, Guid>();
+        public static readonly Dictionary<string, Guid> Recipients = new Dictionary<string, Guid>();
+        public static readonly Dictionary<Guid, Pair> PublicKeys = new Dictionary<Guid, Pair>();
         public static RSAUtils RsaCrypto;
-        public static Pair[] Keys;
-        public static List<int> Chipher = new List<int>();
-        public static List<int> Decrypted = new List<int>();
 
         private static void Main(string[] args)
         {
@@ -35,10 +34,10 @@ namespace Client
                 var ip = Console.ReadLine()?.Trim();
 
                 MasterSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                var ipEndpoint = new IPEndPoint(IPAddress.Parse(ip), 4242);
+                var ipEndpoint = new IPEndPoint(IPAddress.Parse(ip), Port);
                 
                 RsaCrypto = new RSAUtils();
-                Keys = RsaCrypto.KeyGen();
+                RsaCrypto.KeyGen();
 
                 try
                 {
@@ -60,18 +59,32 @@ namespace Client
             {
                 Console.Write($"{DateTime.Now}::>");
                 var input = Console.ReadLine()?.Trim();
-
                 
-                
-                Console.Write("Send this message to: ");
+                Console.Write("Send message to: ");
                 var recipient = Console.ReadLine()?.Trim();
-                Recepients.TryGetValue(recipient, out var recId);
+                
+                if (string.IsNullOrWhiteSpace(recipient)) throw new ArgumentNullException(nameof(recipient));
 
-                Console.WriteLine($"Recipient id id {recId}");
-                var packet = new Packet(PacketType.Chat, Id, recId, Name);
-                packet.Data.Add(Name);
-                packet.Data.Add(input);
-                MasterSocket.Send(packet.ToBytes());
+                    Recipients.TryGetValue(recipient, out var recId);
+                PublicKeys.TryGetValue(recId, out var recipientPublicKey);
+                
+                if (recipientPublicKey == null)
+                {
+                    var p = new Packet(PacketType.KeyExchange, Id, recId, Name)
+                    {
+                        PublicKey = {[0] = RsaCrypto.PublicKey.X, [1] = RsaCrypto.PublicKey.N}
+                    };
+
+                    Console.WriteLine($"{Name}: Sending public key to {recId}");
+                    
+                    MasterSocket.Send(p.ToBytes());
+                }
+                else
+                {
+                    var data = RsaCrypto.Encrypt($"[{Name}]: {input}", recipientPublicKey.X, recipientPublicKey.N);
+                    var packet = new Packet(PacketType.Chat, Id, recId, Name) {Data = data};
+                    MasterSocket.Send(packet.ToBytes());
+                }
             }
         }
         
@@ -108,7 +121,8 @@ namespace Client
                 case PacketType.Chat:
                     var c = Console.ForegroundColor;
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine($"{p.Data[0]} : {p.Data[1]}");
+                    var message = RsaCrypto.Decrypt(p.Data);
+                    Console.WriteLine($"{message}");
                     Console.ForegroundColor = c;
                     break;
                 case PacketType.Broadcast:
@@ -116,7 +130,7 @@ namespace Client
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine($"{p.SenderId} with name {p.Name} has connected.");
                     Console.ForegroundColor = c;
-                    Recepients.Add(p.Name, p.SenderId);
+                    Recipients.Add(p.Name, p.SenderId);
                     var packet = new Packet(PacketType.GetParticipants, Id, p.SenderId, Name);
                     MasterSocket.Send(packet.ToBytes());
                     break;
@@ -131,7 +145,14 @@ namespace Client
                     MasterSocket.Send(packet.ToBytes());
                     break;
                 case PacketType.GetParticipants:
-                    Recepients.TryAdd(p.Name, p.SenderId);
+                    Recipients.TryAdd(p.Name, p.SenderId);
+                    break;
+                case PacketType.KeyExchange:
+                    PublicKeys.TryAdd(p.SenderId, new Pair(p.PublicKey[0], p.PublicKey[1]));
+                    packet = new Packet(PacketType.KeyExchange, Id, p.SenderId, Name);
+                    packet.PublicKey[0] = RsaCrypto.PublicKey.X;
+                    packet.PublicKey[1] = RsaCrypto.PublicKey.N;
+                    MasterSocket.Send(packet.ToBytes());
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

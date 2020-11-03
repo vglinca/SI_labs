@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Security
 {
@@ -119,19 +120,38 @@ namespace Security
             return true;
         }
 
-        public List<int> Encrypt(string text)
+        public List<int> Encrypt(string text, long e, long n)
         {
             var msgArr = text.ToCharArray();
+            var cipher = new List<int>();
+            
+            for(var i = msgArr.Length - 1; i >= 0; --i)
+            {
+                var encryptedSymbol = Cryption(msgArr[i], e, n);
+                cipher.Add((int) encryptedSymbol);
+            }
 
-            /* for(int i = 0; i < msgArr.Length; ++i)
-             {
-                 var encryptedSymbol = Cryption(msgArr[i], )
-             }*/
-
-            return null;
+            return cipher;
         }
         
-        static long Cryption(int a, long b, long c)
+        public string Decrypt(List<int> cipher)
+        {
+            var encryptedMsgArr = cipher.ToArray();
+            var decryptedCharArr = new char[cipher.Count];
+
+            var decryptedArr = encryptedMsgArr
+                .Select(t => Cryption(t, SecretKey.X, SecretKey.N))
+                .Select(decryptedSymbol => (int) decryptedSymbol).ToList();
+
+            for (int i = decryptedCharArr.Length - 1, j = 0; i >= 0; --i, j++)
+            {
+                decryptedCharArr[j] = (char) decryptedArr[i];
+            }
+            
+            return new string(decryptedCharArr);
+        }
+        
+        private long Cryption(int a, long b, long c)
         {
             long res = a;
             long remainder = 1;

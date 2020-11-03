@@ -21,6 +21,9 @@
         }
       },
       "ServerData/1.0.0": {
+        "dependencies": {
+          "Security": "1.0.0"
+        },
         "runtime": {
           "ServerData.dll": {}
         }

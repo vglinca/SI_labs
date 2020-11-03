@@ -12,7 +12,7 @@ namespace Server
     {
         private static Socket _listener;
         private static List<ClientData> _clients;
-        private static Guid _serverId = Guid.NewGuid();
+        private static readonly Guid ServerId = Guid.NewGuid();
 
         private static void Main(string[] args)
         {
@@ -35,7 +35,7 @@ namespace Server
                 _listener.Listen(0);
                 var client = new ClientData(_listener.Accept());
                 _clients.Add(client);
-                var packet = new Packet(PacketType.ClientId, _serverId, client.Id, null);
+                var packet = new Packet(PacketType.ClientId, ServerId, client.Id, null);
                 client.ClientSocket.Send(packet.ToBytes());
             }
         }
@@ -48,6 +48,8 @@ namespace Server
             {
                 while(true)
                 {
+                    if (clientSocket == null) throw new ArgumentNullException(nameof(clientSocket));
+                    
                     var buffer = new byte[clientSocket.SendBufferSize];
                     var readBytes = clientSocket.Receive(buffer);
 
@@ -72,12 +74,6 @@ namespace Server
                 case PacketType.Chat:
                     var cl = _clients.FirstOrDefault(c => c.Id == p.ReceiverId);
                     cl?.ClientSocket.Send(p.ToBytes());
-
-                    /*foreach ( var c in _clients)
-                    {
-                        Console.WriteLine(c.Id);
-                        c.ClientSocket.Send(p.ToBytes());
-                    } */
                     break;
                 case PacketType.Broadcast:
                     foreach (var client in _clients.Where(client => client.Id != p.SenderId))
@@ -88,6 +84,10 @@ namespace Server
                 case PacketType.ClientId:
                     break;
                 case PacketType.GetParticipants:
+                    cl = _clients.FirstOrDefault(c => c.Id == p.ReceiverId);
+                    cl?.ClientSocket.Send(p.ToBytes());
+                    break;
+                case PacketType.KeyExchange:
                     cl = _clients.FirstOrDefault(c => c.Id == p.ReceiverId);
                     cl?.ClientSocket.Send(p.ToBytes());
                     break;

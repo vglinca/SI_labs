@@ -3,27 +3,30 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Runtime.Serialization.Formatters.Binary;
+using Security;
 
 namespace ServerData
 {
     [Serializable]
     public class Packet
     {
-        public List<string> Data;
+        public List<int> Data;
         public int PacketInt;
         public bool PacketBool;
         public Guid SenderId;
         public Guid? ReceiverId;
         public PacketType Type;
         public string Name;
+        public long[] PublicKey;
 
         public Packet(PacketType type, Guid senderId, Guid? receiverId, string name)
         {
-            Data = new List<string>();
+            Data = new List<int>();
             SenderId = senderId;
             ReceiverId = receiverId;
             Type = type;
             Name = name;
+            PublicKey = new long[2];
         }
 
         public Packet(byte[] packetBytes)
@@ -39,6 +42,7 @@ namespace ServerData
             ReceiverId = p.ReceiverId;
             Name = p.Name;
             Type = p.Type;
+            PublicKey = p.PublicKey;
         }
 
         public byte[] ToBytes()

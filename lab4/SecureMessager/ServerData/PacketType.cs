@@ -6,6 +6,7 @@
         Broadcast,
         Chat,
         ClientId,
-        GetParticipants
+        GetParticipants,
+        KeyExchange
     }
 }

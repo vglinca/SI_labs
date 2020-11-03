@@ -16,3 +16,6 @@ C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\obj\Debug\
 C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.csproj.CoreCompileInputs.cache
 C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.dll
 C:\Users\vitalie.glinca\dev\SI\SI_labs\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.pdb
+D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\bin\Debug\netcoreapp3.1\Security.dll
+D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\bin\Debug\netcoreapp3.1\Security.pdb
+D:\Универ\4 курс\1 семестр\SI\LABS\lab4\SecureMessager\ServerData\obj\Debug\netcoreapp3.1\ServerData.csproj.CopyComplete

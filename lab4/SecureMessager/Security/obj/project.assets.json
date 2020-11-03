@@ -8,23 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\vitalie.glinca\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Azathoth\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Security\\Security.csproj",
+      "projectUniqueName": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Security\\Security.csproj",
       "projectName": "Security",
-      "projectPath": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Security\\Security.csproj",
-      "packagesPath": "C:\\Users\\vitalie.glinca\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vitalie.glinca\\dev\\SI\\SI_labs\\lab4\\SecureMessager\\Security\\obj\\",
+      "projectPath": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Security\\Security.csproj",
+      "packagesPath": "C:\\Users\\Azathoth\\.nuget\\packages\\",
+      "outputPath": "D:\\Универ\\4 курс\\1 семестр\\SI\\LABS\\lab4\\SecureMessager\\Security\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\vitalie.glinca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Azathoth\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -62,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
