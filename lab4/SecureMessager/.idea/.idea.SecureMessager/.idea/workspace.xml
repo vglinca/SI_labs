@@ -26,49 +26,7 @@
   <component name="ChangeListManager">
     <list default="true" id="58f01cd8-82fe-4c6c-a9f9-b6f205777b75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../lab 1/RSA/.vs/RSA/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 1/RSA/.vs/RSA/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab 1/RSA/RSA/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 1/RSA/RSA/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab 1/RSA/RSA/bin/Debug/netcoreapp3.1/RSA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 1/RSA/RSA/bin/Debug/netcoreapp3.1/RSA.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab 1/RSA/RSA/bin/Debug/netcoreapp3.1/RSA.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 1/RSA/RSA/bin/Debug/netcoreapp3.1/RSA.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab 1/RSA/RSA/obj/Debug/netcoreapp3.1/RSA.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 1/RSA/RSA/obj/Debug/netcoreapp3.1/RSA.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab 1/RSA/RSA/obj/Debug/netcoreapp3.1/RSA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 1/RSA/RSA/obj/Debug/netcoreapp3.1/RSA.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab 1/RSA/RSA/obj/Debug/netcoreapp3.1/RSA.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 1/RSA/RSA/obj/Debug/netcoreapp3.1/RSA.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SecureMessager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SecureMessager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Client.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netcoreapp3.1/Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netcoreapp3.1/Client.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netcoreapp3.1/Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netcoreapp3.1/Client.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netcoreapp3.1/Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netcoreapp3.1/Security.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netcoreapp3.1/Security.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netcoreapp3.1/Security.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netcoreapp3.1/ServerData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netcoreapp3.1/ServerData.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netcoreapp3.1/ServerData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netcoreapp3.1/ServerData.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netcoreapp3.1/Client.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netcoreapp3.1/Client.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netcoreapp3.1/Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netcoreapp3.1/Client.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netcoreapp3.1/Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netcoreapp3.1/Client.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/Pair.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Security/Pair.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Security/RSAUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Security/RSAUtils.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/bin/Debug/netcoreapp3.1/Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Security/bin/Debug/netcoreapp3.1/Security.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/bin/Debug/netcoreapp3.1/Security.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Security/bin/Debug/netcoreapp3.1/Security.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/obj/Debug/netcoreapp3.1/Security.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Security/obj/Debug/netcoreapp3.1/Security.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/obj/Debug/netcoreapp3.1/Security.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Security/obj/Debug/netcoreapp3.1/Security.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/obj/Debug/netcoreapp3.1/Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Security/obj/Debug/netcoreapp3.1/Security.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/obj/Debug/netcoreapp3.1/Security.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Security/obj/Debug/netcoreapp3.1/Security.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Security.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Security.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Security.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/ServerData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/ServerData.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/ServerData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/ServerData.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/Server.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/Server.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerData/Packet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerData/Packet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerData/bin/Debug/netcoreapp3.1/Security.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServerData/bin/Debug/netcoreapp3.1/Security.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerData/bin/Debug/netcoreapp3.1/Security.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ServerData/bin/Debug/netcoreapp3.1/Security.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerData/bin/Debug/netcoreapp3.1/ServerData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServerData/bin/Debug/netcoreapp3.1/ServerData.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerData/bin/Debug/netcoreapp3.1/ServerData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ServerData/bin/Debug/netcoreapp3.1/ServerData.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerData/obj/Debug/netcoreapp3.1/ServerData.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerData/obj/Debug/netcoreapp3.1/ServerData.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerData/obj/Debug/netcoreapp3.1/ServerData.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ServerData/obj/Debug/netcoreapp3.1/ServerData.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerData/obj/Debug/netcoreapp3.1/ServerData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServerData/obj/Debug/netcoreapp3.1/ServerData.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerData/obj/Debug/netcoreapp3.1/ServerData.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ServerData/obj/Debug/netcoreapp3.1/ServerData.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,8 +48,8 @@
         <option value="$PROJECT_DIR$/Server/Server.cs" />
         <option value="$PROJECT_DIR$/Security/Pair.cs" />
         <option value="$PROJECT_DIR$/Client/Client.cs" />
-        <option value="$PROJECT_DIR$/Security/RSAUtils.cs" />
         <option value="$PROJECT_DIR$/ServerData/Packet.cs" />
+        <option value="$PROJECT_DIR$/Security/RSAUtils.cs" />
       </list>
     </option>
   </component>
@@ -180,7 +138,7 @@
       <workItem from="1604338266822" duration="10847000" />
       <workItem from="1604425612978" duration="8306000" />
       <workItem from="1604496971905" duration="4301000" />
-      <workItem from="1604511600356" duration="1129000" />
+      <workItem from="1604511600356" duration="1453000" />
     </task>
     <servers />
   </component>

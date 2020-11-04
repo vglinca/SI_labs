@@ -125,10 +125,10 @@ namespace Security
             var msgArr = text.ToCharArray();
             var cipher = new List<ulong>();
             
-            for(var i = msgArr.Length - 1; i >= 0; --i)
+            for(var i = 0; i < msgArr.Length; ++i)
             {
                 var encryptedSymbol = Cryption(msgArr[i], e, n);
-                cipher.Add((ulong) encryptedSymbol);
+                cipher.Add(encryptedSymbol);
             }
 
             return cipher;
@@ -143,10 +143,15 @@ namespace Security
                 .Select(t => Cryption(t, SecretKey.X, SecretKey.N))
                 .Select(decryptedSymbol => (int) decryptedSymbol).ToList();
 
-            for (int i = decryptedCharArr.Length - 1, j = 0; i >= 0; --i, j++)
+            for (var i = 0; i < decryptedArr.Count; ++i)
+            {
+                decryptedCharArr[i] = (char) decryptedArr[i];
+            }
+
+            /*for (int i = decryptedCharArr.Length - 1, j = 0; i >= 0; --i, j++)
             {
                 decryptedCharArr[j] = (char) decryptedArr[i];
-            }
+            }*/
             
             return new string(decryptedCharArr);
         }
