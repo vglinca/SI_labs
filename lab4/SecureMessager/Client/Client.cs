@@ -39,6 +39,8 @@ namespace Client
                 RsaCrypto = new RSAUtils();
                 RsaCrypto.KeyGen();
 
+                Console.WriteLine($"Keys: public: ({RsaCrypto.PublicKey.X} {RsaCrypto.PublicKey.N}) secret: ({RsaCrypto.SecretKey.X} {RsaCrypto.SecretKey.N})");
+
                 try
                 {
                     MasterSocket.Connect(ipEndpoint);
@@ -65,7 +67,7 @@ namespace Client
                 
                 if (string.IsNullOrWhiteSpace(recipient)) throw new ArgumentNullException(nameof(recipient));
 
-                    Recipients.TryGetValue(recipient, out var recId);
+                Recipients.TryGetValue(recipient, out var recId);
                 PublicKeys.TryGetValue(recId, out var recipientPublicKey);
                 
                 if (recipientPublicKey == null)
@@ -75,7 +77,7 @@ namespace Client
                         PublicKey = {[0] = RsaCrypto.PublicKey.X, [1] = RsaCrypto.PublicKey.N}
                     };
 
-                    Console.WriteLine($"{Name}: Sending public key to {recId}");
+                    Console.WriteLine($"{Name}: Sending public key ({RsaCrypto.PublicKey.X} {RsaCrypto.PublicKey.N}) to {recId}");
                     
                     MasterSocket.Send(p.ToBytes());
                 }
@@ -148,6 +150,7 @@ namespace Client
                     Recipients.TryAdd(p.Name, p.SenderId);
                     break;
                 case PacketType.KeyExchange:
+                    //Console.WriteLine($"Receive public key: ({p.PublicKey[0]} {p.PublicKey[1]})");
                     PublicKeys.TryAdd(p.SenderId, new Pair(p.PublicKey[0], p.PublicKey[1]));
                     packet = new Packet(PacketType.KeyExchange, Id, p.SenderId, Name);
                     packet.PublicKey[0] = RsaCrypto.PublicKey.X;

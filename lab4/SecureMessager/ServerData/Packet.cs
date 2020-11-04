@@ -10,23 +10,23 @@ namespace ServerData
     [Serializable]
     public class Packet
     {
-        public List<int> Data;
+        public List<ulong> Data;
         public int PacketInt;
         public bool PacketBool;
         public Guid SenderId;
         public Guid? ReceiverId;
         public PacketType Type;
         public string Name;
-        public long[] PublicKey;
+        public ulong[] PublicKey;
 
         public Packet(PacketType type, Guid senderId, Guid? receiverId, string name)
         {
-            Data = new List<int>();
+            Data = new List<ulong>();
             SenderId = senderId;
             ReceiverId = receiverId;
             Type = type;
             Name = name;
-            PublicKey = new long[2];
+            PublicKey = new ulong[2];
         }
 
         public Packet(byte[] packetBytes)

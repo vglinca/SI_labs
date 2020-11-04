@@ -4,10 +4,10 @@ namespace Security
 {
     public class Pair
     {
-        public long X { get; }
-        public long N { get; }
+        public ulong X { get; }
+        public ulong N { get; }
 
-        public Pair(long x, long n)
+        public Pair(ulong x, ulong n)
         {
             X = x;
             N = n;

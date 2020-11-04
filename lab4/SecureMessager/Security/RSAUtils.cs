@@ -18,13 +18,13 @@ namespace Security
 
             var n = pq.X * pq.N;
 
-            var eulerFunc = GetEulerFunction(pq.X, pq.N);
+            var eulerFunc = GetEulerFunction((long) pq.X, (long) pq.N);
 
             var d = CalculateD(eulerFunc);
             var e = CalculateE(d, eulerFunc);
             
-            var secretKey = new Pair(d, n);
-            var publicKey = new Pair(e, n);
+            var secretKey = new Pair((ulong)d, n);
+            var publicKey = new Pair((ulong)e, n);
 
             SecretKey = secretKey;
             PublicKey = publicKey;
@@ -49,7 +49,7 @@ namespace Security
             }
             while (!IsPrime(q) || p == q);
 
-            return new Pair(p, q);
+            return new Pair((ulong) p, (ulong) q);
         }
         
         private long CalculateD(long eulerFuncVal)
@@ -120,21 +120,21 @@ namespace Security
             return true;
         }
 
-        public List<int> Encrypt(string text, long e, long n)
+        public List<ulong> Encrypt(string text, ulong e, ulong n)
         {
             var msgArr = text.ToCharArray();
-            var cipher = new List<int>();
+            var cipher = new List<ulong>();
             
             for(var i = msgArr.Length - 1; i >= 0; --i)
             {
                 var encryptedSymbol = Cryption(msgArr[i], e, n);
-                cipher.Add((int) encryptedSymbol);
+                cipher.Add((ulong) encryptedSymbol);
             }
 
             return cipher;
         }
         
-        public string Decrypt(List<int> cipher)
+        public string Decrypt(List<ulong> cipher)
         {
             var encryptedMsgArr = cipher.ToArray();
             var decryptedCharArr = new char[cipher.Count];
@@ -151,10 +151,10 @@ namespace Security
             return new string(decryptedCharArr);
         }
         
-        private long Cryption(int a, long b, long c)
+        private ulong Cryption(ulong a, ulong b, ulong c)
         {
-            long res = a;
-            long remainder = 1;
+            ulong res = a;
+            ulong remainder = 1;
             while (true)
             {
                 if (res >= c)

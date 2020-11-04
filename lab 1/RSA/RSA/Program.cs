@@ -11,8 +11,8 @@ namespace RSA
 
         static void Main(string[] args)
         {
-            var encryptedMsg = new List<int>();
-            var decriptedMsg = new List<int>();
+            var encryptedMsg = new List<ulong>();
+            var decriptedMsg = new List<ulong>();
 
             long p, q, n, d, e;
             (p, q) = FindPandQ();
@@ -40,20 +40,23 @@ namespace RSA
 
 			var msgArr = msg.ToCharArray();
 
-			for (int i = 0; i < msgArr.Length; i++)
+            const long E = 2195055067;
+            const long D = 3;
+            const long N = 3292697371;
+
+
+            for (int i = 0; i < msgArr.Length; i++)
             {
-                //var encr = Operation(msgArr[i], e, n);
-                var encr = Cryption(msgArr[i], e, n);
-                encryptedMsg.Add((int)encr);
+                var encr = Cryption(msgArr[i], E, N);
+                encryptedMsg.Add(encr);
             }
             Console.WriteLine($"Encrypted message: {string.Join('\0', encryptedMsg)}");
 
             var encryptdMsgArr = encryptedMsg.ToArray();
             for (int i = 0; i < encryptdMsgArr.Length; i++)
             {
-                //var decryptedChar = Operation(encryptdMsgArr[i], d, n);
-                var decryptedChar = Cryption(encryptdMsgArr[i], d, n);
-                decriptedMsg.Add((int)decryptedChar);
+                var decryptedChar = Cryption(encryptdMsgArr[i], D, N);
+                decriptedMsg.Add(decryptedChar);
             }
 
             Console.WriteLine($"Decrypted message is: {string.Join('\0', decriptedMsg)}");
@@ -227,10 +230,10 @@ namespace RSA
             return num[0][0];
         }
 
-        static long Cryption(int a, long b, long c)
+        static ulong Cryption(ulong a, ulong b, ulong c)
 		{
-            long rez = a;
-            long ost = 1;
+            ulong rez = a;
+            ulong ost = 1;
             while (true)
             {
                 if (rez >= c)
